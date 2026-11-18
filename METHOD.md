@@ -24,7 +24,7 @@ large relative to the 26 bps round-trip cost.
 
 - Entry, full size (100% of cash), when either trigger fires and no
   position is open:
-  - sharp dip: close down ≥ 120 bps over the last 10 closes;
+  - sharp dip: close down ≥ 140 bps over the last 10 closes;
   - breakout: close ≥ 20 bps above the highest close of the previous
     15 closes.
 - Exit, whole position, when any of these holds at a bar's close:
