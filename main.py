@@ -3,7 +3,7 @@
 Long-only, one position at a time, full-size entries. Two entry triggers,
 both read only from closes already delivered in batches (no lookahead):
 
-  1. Sharp dip: the close fell at least 120 bps over the last 10 minutes.
+  1. Sharp dip: the close fell at least 140 bps over the last 10 minutes.
      Buys the capitulation, expecting the bounce.
   2. Breakout: the close is at least 20 bps above the highest close of the
      previous 15 minutes. Buys a fresh leg up.
@@ -27,7 +27,7 @@ SYMBOL = "CBBTC"
 
 # --- tuned parameters (grid-searched on the frozen dev window) ---
 DIP_LOOKBACK = 10        # bars for the sharp-dip trigger
-DIP_BPS = 120            # min 10-minute fall to buy the dip, in bps
+DIP_BPS = 140            # min 10-minute fall to buy the dip, in bps
 BREAKOUT_LOOKBACK = 15   # bars for the breakout trigger
 BREAKOUT_BPS = 20        # min excess over the 15-bar high, in bps
 TAKE_PROFIT_BPS = 120
